@@ -585,20 +585,6 @@ li a{
     color: rgb(107 114 128);
 }
 
-@media screen and (max-width: 1150px) {
-    .right_links{
-        position: fixed;
-        bottom: 0;
-        left: -550px;
-        right: 0;
-        width: 100%;
-        background-color: var(--container-color);
-        box-shadow: 0 -8px 32px hsla(0, 0%, 0%, .1);
-        padding: 1.25rem 18rem;
-        transition: background-color .4s;
-    }
-}
-
 .footer {
     margin-top: 15px;
     background-color: #e6e6e6;
