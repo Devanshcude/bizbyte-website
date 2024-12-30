@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <title>Library Web</title>
+</head>
+
+<body>
+    <!-- <=====================NAVBAR=====================> -->
+    <header class="header" id="header">
+        <div class="main_logo">
+            <a href="#" class="nav_logo">
+                <i class="ri-book-fill"></i>E-book
+            </a>
+        </div>
+        <div class="right_links">
+            <a href="#home" class="home" id="home-link">
+                <i class="ri-home-line">Home</i>
+                <span></span>
+            </a>
+            <a href="#Category" class="category" id="categorization">
+                <i class="ri-book-shelf-line">Category &#x25BC;</i>
+                <span></span>
+            </a>
+            <a href="#Featured" class="featured" id="featured-link">
+                <i class="ri-book-3-line">Featured</i>
+                <span></span>
+            </a>
+            <a href="#Testimonal" class="testimonal" id="testimonal-link">
+                <i class="ri-message-3-line">Testimonal</i>
+                <span></span>
+            </a>
+        </div>
+        <div class="nav_actions">
+            <i class="ri-search-line" id="search-button" class="button"></i>
+            <i class="ri-user-3-line" id="login-button" class="button"></i>
+            <i class="ri-moon-line" id="theme-button" class="button"></i>
+        </div>
+        <div class="dropdown__menu" id="category">
+            <ul>
+                <li><a href="#">Crime</a></li>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Poery</a></li>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Horror</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- <=====================SEARCH BAR=====================> -->
+    <div class="search" id="search-content">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+
+    <!-- <=====================LOGIN FORM=====================> -->
+    <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" class="login__input" id="login-email">
+                </div>
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Write your password" class="login__input" id="login-pass">
+                </div>
+            </div>
+            <div>
+                <span class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+                <a href="#" class="login__button button1">Log In</a>
+            </div>
+        </form>
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!-- <=====================MAIN CONTENT=====================> -->
+    <main class="main-content">
+
+    <!-- <=====================HOME SECTION=====================> -->
+        <section class="first-section" id="home-section">
+            <div class="left-content">
+                <h1 class="heading">Broswe &
+                Select <br> E-Books
+                </h1>
+
+                <p class="paragraph-description">Find the best e-books from your favorite writers, explore hundreds of books with all possible categories, take advantage of the 50% discount and much more. </p>
+
+                <div class="home-buttons">
+                    <a href="#" class="button2">Explore Now
+                    </a>
+                    <a href="#" class="button3">Get offers</a>
+                </div>
+            </div>
+            <div class="right-content">
+                <article>
+                    <img src="home-book-1.png" alt="" width="270px" class="article-1">
+                </article>
+                <article>
+                   <img src="book-1.png" alt="" width="270px" class="article-2">
+                </article>
+                 <article>
+                    <img src="home-book-2.png" alt="" width="270px" class="article-3">
+                 </article>
+            </div>
+        </section>
+
+        <!-- <=====================SERVICES SECTION=====================> -->
+        <section class="services-section" id="services">
+            <div class="services__container grid">
+                <article class="services__card">
+                    <i class="ri-truck-line"></i>
+                    <h3 class="services__title">Free Shipping</h3>
+                    <p class="services__description">Order More Than 100$</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="services__title">Secure Payment</h3>
+                    <p class="services__description">100% Secure Payment</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="services__title">24/7 Support</h3>
+                    <p class="services__description">Call us anytime</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- <=====================FEATURED SECTION=====================> -->
+        <section class="featured-section" id="discount">
+            <h1 class="featured-heading">Featured Section</h1>
+            <div class="discount__container container">
+                <div class="discount__images">
+                    <img src="book-10.png" alt="" class="discount__img-1" width="270px">
+                    <img src="book-8.png" alt="" class="discount__img-2" width="270px">
+                </div>
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">Up To 50% Discount</h2>
+                    <p class="discount__description">
+                        Here are the featured books on discount. Take advantage of the discount days we have for you, buy books from your favorite writers, the more you buy, the more discounts we have for you.
+                    </p>
+                    <a href="#" class="button2">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <=====================TESTIMONAL SECTION=====================> -->
+        <section class="testimonal-section" id="testimonal-section">
+            <h2 class="testimonal-heading">Testimonal</h2>
+            <div class="testimonal-boxes">
+                <div class="left-testimonal">
+                    <i class="ri-double-quotes-r double-quotes"></i>
+
+                    <p class="testi-paragraph">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a class="left-image inline-flex items-center">
+                        <img alt="testimonial" src="testimonial-perfil-1.png" class="left__image">
+                        <span class="left-designation">
+                          <span class="left-name">Holden Caulfield</span>
+                          <span class="left-post">UI DEVELOPER</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="left-testimonal">
+                    <i class="ri-double-quotes-r double-quotes"></i>
+
+                    <p class="testi-paragraph">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a class="left-image in">
+                        <img alt="testimonial" src="testimonial-perfil-2.png" class="left__image">
+                        <span class="left-designation">
+                          <span class="left-name">Holden Caulfield</span>
+                          <span class="left-post">UI DEVELOPER</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="right-testimonal">
+                    <i class="ri-double-quotes-r double-quotes"></i>
+
+                    <p class="testi-paragraph">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a class="right-image">
+                        <img alt="testimonial" src="testimonial-perfil-3.png" class="right__image">
+                        <span class="right-designation">
+                          <span class="right-name">Alper Kamu</span>
+                          <span class="right-post">DESIGNER</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <=====================FOOTER=====================> -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo-section">
+                <div class="logo-icon">
+                    <img src="book-removebg-preview.png" alt="Tailblocks Logo">
+                    <h3>E-Book</h3>
+                </div>
+                <div class="logo-text">
+                    <p>The most trusted website for E-book Library system</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>ABOUT</h4>
+                    <a href="#">Awards</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms of Services</a>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="#">Blogs</a>
+                    <a href="#">Community</a>
+                    <a href="#">Our team</a>
+                    <a href="#">Help center</a>
+                </div>
+                <div class="link-column">
+                    <h4>CONTACT</h4>
+                    <a href="#">John Smith</a>
+                    <a href="#">New York, 271-Street</a>
+                    <a href="#">e-book@gmail.com</a>
+                    <a href="#">444-224-456</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-book — <a href="https://twitter.com/knyttneve" target="_blank">@knyttevene</a></p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-x-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="index.js"></script>
